@@ -1,11 +1,34 @@
-# Archivos y carpetas de Visual Studio
+## Ignorar archivos de Visual Studio
+.vs/
+[Aa]horcadito/bin/
+[Aa]horcadito/obj/
+*.user
+*.suo
+*.cache
+*.docstates
+*.[Cc]ache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.pdb
+*.tmp
+*.tlog
+*~
+*.db
+*.opendb
+*.VC.db
 
-## Carpetas de la solución/proyecto
+## Ignorar archivos de compilación
 [Bb]in/
 [Oo]bj/
-*.user
+[Dd]ebug/
+[Rr]elease/
+*.exe
+*.dll
 *.pdb
-*.suo
 
-## Carpeta de la solución de Visual Studio
-.vs/
+## Otros archivos temporales
+_ReSharper.*
+*.bak
+*.csproj.user

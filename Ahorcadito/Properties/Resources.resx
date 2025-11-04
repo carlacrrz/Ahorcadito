@@ -127,6 +127,9 @@
   <data name="AHORCADO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AHORCADO.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IMG_7230 31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_7230 31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="IMG_7230 2-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG_7230 2-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,7 +142,7 @@
   <data name="IMG_7230 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG_7230 3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_7230 31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IMG_7230 31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AHORCADO 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AHORCADO 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
