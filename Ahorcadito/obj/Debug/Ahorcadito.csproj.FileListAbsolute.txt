@@ -1,0 +1,12 @@
+C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\obj\Debug\Ahorcadito.csproj.AssemblyReference.cache
+C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\obj\Debug\Ahorcado.Form1.resources
+C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\obj\Debug\Ahorcado.Form2.resources
+C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\obj\Debug\Ahorcado.Form3.resources
+C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\obj\Debug\Ahorcadito.Properties.Resources.resources
+C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\obj\Debug\Ahorcadito.csproj.GenerateResource.cache
+C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\obj\Debug\Ahorcadito.csproj.CoreCompileInputs.cache
+C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\bin\Debug\Ahorcadito.exe.config
+C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\bin\Debug\Ahorcadito.exe
+C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\bin\Debug\Ahorcadito.pdb
+C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\obj\Debug\Ahorcadito.exe
+C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\obj\Debug\Ahorcadito.pdb

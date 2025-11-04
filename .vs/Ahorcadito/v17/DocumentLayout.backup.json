@@ -1,0 +1,243 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|c:\\users\\carlacruz\\documents\\ahorcadito\\ahorcadito\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|solutionrelative:ahorcadito\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|C:\\Users\\carlacruz\\Documents\\Ahorcadito\\ahorcadito\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|solutionrelative:ahorcadito\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|C:\\Users\\carlacruz\\Documents\\Ahorcadito\\ahorcadito\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|solutionrelative:ahorcadito\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|C:\\Users\\carlacruz\\Documents\\Ahorcadito\\ahorcadito\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|solutionrelative:ahorcadito\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|C:\\Users\\carlacruz\\Documents\\Ahorcadito\\ahorcadito\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|solutionrelative:ahorcadito\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|C:\\Users\\carlacruz\\Documents\\Ahorcadito\\ahorcadito\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|solutionrelative:ahorcadito\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|C:\\Users\\carlacruz\\Documents\\Ahorcadito\\ahorcadito\\fabricajuegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|solutionrelative:ahorcadito\\fabricajuegos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|C:\\Users\\carlacruz\\Documents\\Ahorcadito\\ahorcadito\\juegocontiempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|solutionrelative:ahorcadito\\juegocontiempo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|C:\\Users\\carlacruz\\Documents\\Ahorcadito\\ahorcadito\\juegobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|solutionrelative:ahorcadito\\juegobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|C:\\Users\\carlacruz\\Documents\\Ahorcadito\\ahorcadito\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|solutionrelative:ahorcadito\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|C:\\Users\\carlacruz\\Documents\\Ahorcadito\\ahorcadito\\mododificultad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|solutionrelative:ahorcadito\\mododificultad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|C:\\Users\\carlacruz\\Documents\\Ahorcadito\\ahorcadito\\juegoahorcado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|solutionrelative:ahorcadito\\juegoahorcado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|C:\\Users\\carlacruz\\Documents\\Ahorcadito\\ahorcadito\\dibujadoranimado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|solutionrelative:ahorcadito\\dibujadoranimado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|C:\\Users\\carlacruz\\Documents\\Ahorcadito\\ahorcadito\\configuracionjuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF47222-E0FE-41FE-8EAD-55D018812C87}|Ahorcadito\\Ahorcadito.csproj|solutionrelative:ahorcadito\\configuracionjuego.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form3.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\Form3.cs",
+              "RelativeDocumentMoniker": "Ahorcadito\\Form3.cs",
+              "ToolTip": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\Form3.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Ahorcadito\\Form3.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T05:07:47.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\Form2.cs",
+              "RelativeDocumentMoniker": "Ahorcadito\\Form2.cs",
+              "ToolTip": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Ahorcadito\\Form2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T05:07:35.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\Form1.cs",
+              "RelativeDocumentMoniker": "Ahorcadito\\Form1.cs",
+              "ToolTip": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Ahorcadito\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T05:07:25.988Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\Form2.cs",
+              "RelativeDocumentMoniker": "Ahorcadito\\Form2.cs",
+              "ToolTip": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\Form2.cs",
+              "RelativeToolTip": "Ahorcadito\\Form2.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAuwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:03.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\Form3.cs",
+              "RelativeDocumentMoniker": "Ahorcadito\\Form3.cs",
+              "ToolTip": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\Form3.cs",
+              "RelativeToolTip": "Ahorcadito\\Form3.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAuwMEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:43:32.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JuegoConTiempo.cs",
+              "DocumentMoniker": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\JuegoConTiempo.cs",
+              "RelativeDocumentMoniker": "Ahorcadito\\JuegoConTiempo.cs",
+              "ToolTip": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\JuegoConTiempo.cs",
+              "RelativeToolTip": "Ahorcadito\\JuegoConTiempo.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAuwCAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:47:42.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\Form1.cs",
+              "RelativeDocumentMoniker": "Ahorcadito\\Form1.cs",
+              "ToolTip": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\Form1.cs",
+              "RelativeToolTip": "Ahorcadito\\Form1.cs",
+              "ViewState": "AgIAABEAAAAAnpmZmZkLwB8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:42:25.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JuegoBase.cs",
+              "DocumentMoniker": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\JuegoBase.cs",
+              "RelativeDocumentMoniker": "Ahorcadito\\JuegoBase.cs",
+              "ToolTip": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\JuegoBase.cs",
+              "RelativeToolTip": "Ahorcadito\\JuegoBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:44:08.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FabricaJuegos.cs",
+              "DocumentMoniker": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\FabricaJuegos.cs",
+              "RelativeDocumentMoniker": "Ahorcadito\\FabricaJuegos.cs",
+              "ToolTip": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\FabricaJuegos.cs",
+              "RelativeToolTip": "Ahorcadito\\FabricaJuegos.cs",
+              "ViewState": "AgIAAA0AAAAA0MzMzMwGwCAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:49:51.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\Program.cs",
+              "RelativeDocumentMoniker": "Ahorcadito\\Program.cs",
+              "ToolTip": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\Program.cs",
+              "RelativeToolTip": "Ahorcadito\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:42:15.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ModoDificultad.cs",
+              "DocumentMoniker": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\ModoDificultad.cs",
+              "RelativeDocumentMoniker": "Ahorcadito\\ModoDificultad.cs",
+              "ToolTip": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\ModoDificultad.cs",
+              "RelativeToolTip": "Ahorcadito\\ModoDificultad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:48:27.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "JuegoAhorcado.cs",
+              "DocumentMoniker": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\JuegoAhorcado.cs",
+              "RelativeDocumentMoniker": "Ahorcadito\\JuegoAhorcado.cs",
+              "ToolTip": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\JuegoAhorcado.cs",
+              "RelativeToolTip": "Ahorcadito\\JuegoAhorcado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:45:40.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DibujadorAnimado.cs",
+              "DocumentMoniker": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\DibujadorAnimado.cs",
+              "RelativeDocumentMoniker": "Ahorcadito\\DibujadorAnimado.cs",
+              "ToolTip": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\DibujadorAnimado.cs",
+              "RelativeToolTip": "Ahorcadito\\DibujadorAnimado.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAAHAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:49:28.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ConfiguracionJuego.cs",
+              "DocumentMoniker": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\ConfiguracionJuego.cs",
+              "RelativeDocumentMoniker": "Ahorcadito\\ConfiguracionJuego.cs",
+              "ToolTip": "C:\\Users\\carlacruz\\Documents\\Ahorcadito\\Ahorcadito\\ConfiguracionJuego.cs",
+              "RelativeToolTip": "Ahorcadito\\ConfiguracionJuego.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T04:46:01.691Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
