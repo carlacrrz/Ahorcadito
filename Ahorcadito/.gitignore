@@ -1,0 +1,11 @@
+# Archivos y carpetas de Visual Studio
+
+## Carpetas de la solución/proyecto
+[Bb]in/
+[Oo]bj/
+*.user
+*.pdb
+*.suo
+
+## Carpeta de la solución de Visual Studio
+.vs/

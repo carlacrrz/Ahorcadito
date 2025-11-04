@@ -7,7 +7,9 @@ namespace Ahorcado
     public partial class Form1 : Form
     {
         private Button btnJugar;
-        private Label lblTitulo;
+        private Button button1;
+        private Button button2;
+        private Label label1;
 
         public Form1()
         {
@@ -16,35 +18,43 @@ namespace Ahorcado
 
         private void InitializeComponent()
         {
-            this.btnJugar = new Button();
-            this.lblTitulo = new Label();
-
+            this.btnJugar = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
             // btnJugar
-            this.btnJugar.Location = new Point(300, 200);
+            // 
+            this.btnJugar.BackColor = System.Drawing.Color.Orange;
+            this.btnJugar.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.btnJugar.FlatAppearance.BorderSize = 2;
+            this.btnJugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJugar.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJugar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnJugar.Location = new System.Drawing.Point(197, 392);
             this.btnJugar.Name = "btnJugar";
-            this.btnJugar.Size = new Size(200, 50);
-            this.btnJugar.Text = "JUGAR";
-            this.btnJugar.Click += new EventHandler(this.btnJugar_Click);
-
-            // lblTitulo
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new Font("Arial", 24F, FontStyle.Bold);
-            this.lblTitulo.Location = new Point(250, 100);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new Size(300, 37);
-            this.lblTitulo.Text = "JUEGO DEL AHORCADO";
-
+            this.btnJugar.Size = new System.Drawing.Size(339, 116);
+            this.btnJugar.TabIndex = 0;
+            this.btnJugar.Text = "Jugar";
+            this.btnJugar.UseVisualStyleBackColor = false;
+            this.btnJugar.Click += new System.EventHandler(this.btnJugar_Click_1);
+            // 
             // Form1
-            this.AutoScaleDimensions = new SizeF(6F, 13F);
-            this.AutoScaleMode = AutoScaleMode.Font;
-            this.ClientSize = new Size(800, 450);
+            // 
+            this.BackgroundImage = global::Ahorcadito.Properties.Resources.AHORCADO;
+            this.ClientSize = new System.Drawing.Size(748, 745);
             this.Controls.Add(this.btnJugar);
-            this.Controls.Add(this.lblTitulo);
             this.Name = "Form1";
-            this.Text = "Ahorcado - Inicio";
+            this.ResumeLayout(false);
+
         }
 
-        private void btnJugar_Click(object sender, EventArgs e)
+        
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnJugar_Click_1(object sender, EventArgs e)
         {
             Form2 configuracion = new Form2();
             configuracion.Show();

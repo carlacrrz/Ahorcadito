@@ -10,3 +10,4 @@ C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\bin\Debug\Ahorcadito.exe
 C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\bin\Debug\Ahorcadito.pdb
 C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\obj\Debug\Ahorcadito.exe
 C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\obj\Debug\Ahorcadito.pdb
+C:\Users\carlacruz\Documents\Ahorcadito\Ahorcadito\obj\Debug\Ahorcadito.exe.config
