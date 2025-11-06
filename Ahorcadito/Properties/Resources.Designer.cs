@@ -113,6 +113,16 @@ namespace Ahorcadito.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AHORCADO_3 {
+            get {
+                object obj = ResourceManager.GetObject("AHORCADO 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IMG_7230_2_2 {
             get {
                 object obj = ResourceManager.GetObject("IMG_7230 2-2", resourceCulture);
@@ -136,6 +146,16 @@ namespace Ahorcadito.Properties {
         internal static System.Drawing.Bitmap IMG_7230_31 {
             get {
                 object obj = ResourceManager.GetObject("IMG_7230 31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Untitled_design {
+            get {
+                object obj = ResourceManager.GetObject("Untitled design", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

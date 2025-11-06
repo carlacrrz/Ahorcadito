@@ -31,7 +31,7 @@ namespace Ahorcado
 
                 for (int i = 1; i <= errores; i++)
                 {
-                    if (i <= 10)
+                    if (i <= 8)
                     {
                         DibujarParte(g, lapiz, i);
                     }

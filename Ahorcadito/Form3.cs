@@ -1,24 +1,31 @@
-﻿using System;
+﻿using Ahorcado;
+using System;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.IO;
 using System.Windows.Forms;
 
-namespace Ahorcado
+namespace Ahorcadito
 {
     public partial class Form3 : Form
     {
         private JuegoAhorcado juego;
         private Timer temporizador;
         private int tiempoRestante = 60;
-        private PictureBox picAhorcado;
-        private Label lblPalabra;
-        private Label lblIntentos;
-        private Label lblTiempo;
-        private Button btnJugarDeNuevo;
+        private bool conTiempo;
+        private bool dificil;
 
         public Form3(string palabra, bool conTiempo, bool dificil)
         {
+            InitializeComponent();
+
+            btnJugarDeNuevo.Visible = false;
+            btnJugarDeNuevo.Enabled = false;
+
+            HacerBotonRedondeado(btnJugarDeNuevo, 25);
+            this.conTiempo = conTiempo;
+            this.dificil = dificil;
             juego = new JuegoAhorcado(palabra, dificil);
-            InicializarFormulario();
             InicializarTeclado();
             ActualizarInterfaz();
 
@@ -28,73 +35,29 @@ namespace Ahorcado
             }
         }
 
-        private void InicializarFormulario()
-        {
-            this.Text = "Juego del Ahorcado";
-            this.ClientSize = new Size(600, 450);
-            this.StartPosition = FormStartPosition.CenterScreen;
-
-            // PictureBox para el ahorcado
-            picAhorcado = new PictureBox();
-            picAhorcado.Location = new Point(50, 50);
-            picAhorcado.Size = new Size(300, 200);
-            picAhorcado.BackColor = Color.White;
-            picAhorcado.BorderStyle = BorderStyle.FixedSingle;
-            this.Controls.Add(picAhorcado);
-
-            // Label para la palabra
-            lblPalabra = new Label();
-            lblPalabra.AutoSize = true;
-            lblPalabra.Font = new Font("Courier New", 18F);
-            lblPalabra.Location = new Point(50, 260);
-            lblPalabra.Size = new Size(300, 27);
-            this.Controls.Add(lblPalabra);
-
-            // Label para intentos
-            lblIntentos = new Label();
-            lblIntentos.AutoSize = true;
-            lblIntentos.Location = new Point(400, 50);
-            lblIntentos.Size = new Size(150, 13);
-            this.Controls.Add(lblIntentos);
-
-            // Label para tiempo
-            lblTiempo = new Label();
-            lblTiempo.AutoSize = true;
-            lblTiempo.Location = new Point(400, 80);
-            lblTiempo.Size = new Size(150, 13);
-            lblTiempo.Visible = false;
-            this.Controls.Add(lblTiempo);
-
-            // Botón jugar de nuevo
-            btnJugarDeNuevo = new Button();
-            btnJugarDeNuevo.Location = new Point(400, 350);
-            btnJugarDeNuevo.Size = new Size(100, 30);
-            btnJugarDeNuevo.Text = "Jugar de Nuevo";
-            btnJugarDeNuevo.Click += new EventHandler(btnJugarDeNuevo_Click);
-            btnJugarDeNuevo.Visible = false;
-            this.Controls.Add(btnJugarDeNuevo);
-        }
-
         private void InicializarTeclado()
         {
             int x = 50;
-            int y = 300;
+            int y = 480;
             string letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
             foreach (char letra in letras)
             {
                 Button btnLetra = new Button();
                 btnLetra.Text = letra.ToString();
-                btnLetra.Size = new Size(30, 30);
+                btnLetra.Size = new Size(50, 50);
                 btnLetra.Location = new Point(x, y);
+                btnLetra.BackColor = Color.Orange;
+                btnLetra.ForeColor = Color.White;
+                btnLetra.Font = new Font("Comic Sans MS", 20F, FontStyle.Bold);
                 btnLetra.Click += (s, e) => ProcesarLetra(letra);
                 this.Controls.Add(btnLetra);
 
-                x += 35;
-                if (x > 400)
+                x += 60;
+                if (x > 600)
                 {
                     x = 50;
-                    y += 35;
+                    y += 55;
                 }
             }
         }
@@ -106,13 +69,13 @@ namespace Ahorcado
             temporizador.Tick += Temporizador_Tick;
             temporizador.Start();
             lblTiempo.Visible = true;
-            lblTiempo.Text = $"Tiempo: {tiempoRestante}s";
+            ActualizarTiempo();
         }
 
         private void Temporizador_Tick(object sender, EventArgs e)
         {
             tiempoRestante--;
-            lblTiempo.Text = $"Tiempo: {tiempoRestante}s";
+            ActualizarTiempo();
 
             if (tiempoRestante <= 0)
             {
@@ -121,55 +84,148 @@ namespace Ahorcado
             }
         }
 
+        private void ActualizarTiempo()
+        {
+            lblTiempo.Text = $"Tiempo: {tiempoRestante}s";
+        }
+
         private void ProcesarLetra(char letra)
         {
+            foreach (Control control in this.Controls)
+            {
+                if (control is Button btn && btn.Text == letra.ToString() && btn != btnJugarDeNuevo)
+                {
+                    btn.Enabled = false;
+                    btn.BackColor = Color.Red;
+                    break;
+                }
+            }
+
             juego.ProcesarIntento(letra);
             ActualizarInterfaz();
 
             if (juego.JuegoTerminado)
             {
-                if (temporizador != null) temporizador.Stop();
+                if (temporizador != null)
+                    temporizador.Stop();
                 MostrarResultado(juego.JuegoGanado);
             }
         }
 
         private void ActualizarInterfaz()
         {
-            lblPalabra.Text = juego.PalabraOculta;
-            lblIntentos.Text = $"Intentos restantes: {juego.IntentosRestantes}";
-            DibujarAhorcado();
+            if (juego != null)
+            {
+                lblPalabra.Text = juego.PalabraOculta;
+
+                int intentosMaximos = dificil ? 5 : 8;
+                int intentosRestantes = juego.IntentosRestantes;
+                lblIntentos.Text = $"Intentos: {intentosRestantes}/{intentosMaximos}";
+
+                this.Invalidate();
+            }
         }
 
-        private void DibujarAhorcado()
+        protected override void OnPaint(PaintEventArgs e)
         {
-            Bitmap bitmap = new Bitmap(picAhorcado.Width, picAhorcado.Height);
-            using (Graphics g = Graphics.FromImage(bitmap))
-            {
-                g.Clear(Color.White);
-                Pen lapiz = new Pen(Color.Black, 2);
+            base.OnPaint(e);
 
+            if (juego == null) return;
+
+            Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+
+            using (Pen lapiz = new Pen(Color.SaddleBrown, 6))
+            using (Brush relleno = new SolidBrush(Color.SaddleBrown))
+            {
                 int errores = juego.ErroresCometidos;
 
-                if (errores >= 1) g.DrawLine(lapiz, 50, 200, 150, 200);
-                if (errores >= 2) g.DrawLine(lapiz, 100, 200, 100, 50);
-                if (errores >= 3) g.DrawLine(lapiz, 100, 50, 200, 50);
-                if (errores >= 4) g.DrawLine(lapiz, 200, 50, 200, 80);
-                if (errores >= 5) g.DrawEllipse(lapiz, 190, 80, 20, 20);
-                if (errores >= 6) g.DrawLine(lapiz, 200, 100, 200, 140);
-                if (errores >= 7) g.DrawLine(lapiz, 200, 110, 180, 130);
-                if (errores >= 8) g.DrawLine(lapiz, 200, 110, 220, 130);
-                if (errores >= 9) g.DrawLine(lapiz, 200, 140, 180, 170);
-                if (errores >= 10) g.DrawLine(lapiz, 200, 140, 220, 170);
+                int cabezaX = 350, cabezaY = 130;
+                int tamanoCabeza = 70;
+                int radioCabeza = tamanoCabeza / 2;
+
+                int cuerpoYInicio = 200,
+                    cuerpoYFin = 300;
+                int brazosY = 230, piernasY = 300;
+
+                int centroCabezaX = cabezaX;
+                int centroCabezaY = cabezaY + radioCabeza; 
+                int separacionOjos = 10;
+                int tamanoOjo = 10; 
+                int alturaOjos = 10; 
+
+                if (dificil)
+                {
+                    if (errores >= 1)
+                        g.DrawEllipse(lapiz, cabezaX - radioCabeza, cabezaY, tamanoCabeza, tamanoCabeza);
+
+                    if (errores >= 2)
+                        g.DrawLine(lapiz, cabezaX, cuerpoYInicio, cabezaX, cuerpoYFin);
+
+                    if (errores >= 3)
+                    {
+                        g.DrawLine(lapiz, cabezaX, brazosY, cabezaX - 45, brazosY + 13);
+                        g.DrawLine(lapiz, cabezaX, brazosY, cabezaX + 45, brazosY + 13);
+                    }
+
+                    if (errores >= 4)
+                    {
+                        g.DrawLine(lapiz, cabezaX, piernasY, cabezaX - 40, piernasY + 80);
+                        g.DrawLine(lapiz, cabezaX, piernasY, cabezaX + 40, piernasY + 80);
+                    }
+
+                    if (errores >= 5)
+                    {
+                        g.FillEllipse(relleno, centroCabezaX - separacionOjos - tamanoOjo / 2, centroCabezaY - alturaOjos, tamanoOjo, tamanoOjo);
+                        g.FillEllipse(relleno, centroCabezaX + separacionOjos - tamanoOjo / 2, centroCabezaY - alturaOjos, tamanoOjo, tamanoOjo);
+                    }
+                }
+                else
+                {
+                    if (errores >= 1)
+                        g.DrawEllipse(lapiz, cabezaX - radioCabeza, cabezaY, tamanoCabeza, tamanoCabeza);
+
+                    if (errores >= 2)
+                        g.DrawLine(lapiz, cabezaX, cuerpoYInicio, cabezaX, cuerpoYFin);
+
+                    if (errores >= 3)
+                        g.DrawLine(lapiz, cabezaX, brazosY, cabezaX - 45, brazosY + 13);
+
+                    if (errores >= 4)
+                        g.DrawLine(lapiz, cabezaX, brazosY, cabezaX + 45, brazosY + 13);
+
+                    if (errores >= 5)
+                        g.DrawLine(lapiz, cabezaX, piernasY, cabezaX - 40, piernasY + 80);
+
+                    if (errores >= 6)
+                        g.DrawLine(lapiz, cabezaX, piernasY, cabezaX + 40, piernasY + 80);
+
+                    if (errores >= 7)
+                        g.FillEllipse(relleno, centroCabezaX - separacionOjos - tamanoOjo / 2, centroCabezaY - alturaOjos, tamanoOjo, tamanoOjo);
+
+                    if (errores >= 8)
+                        g.FillEllipse(relleno, centroCabezaX + separacionOjos - tamanoOjo / 2, centroCabezaY - alturaOjos, tamanoOjo, tamanoOjo);
+                }
             }
-            picAhorcado.Image = bitmap;
         }
 
         private void MostrarResultado(bool ganado)
         {
             string mensaje = ganado ? "¡Felicidades! Has ganado." : "¡Game Over! Has perdido.";
-            MessageBox.Show(mensaje);
+
+
+            string palabraSecreta = "No disponible";
+            if (juego != null && juego.PalabraSecreta != null)
+            {
+                palabraSecreta = juego.PalabraSecreta;
+            }
+
+            MessageBox.Show(mensaje + $"\nLa palabra era: {palabraSecreta}", "Resultado del Juego");
 
             btnJugarDeNuevo.Visible = true;
+            btnJugarDeNuevo.Enabled = true;
+            btnJugarDeNuevo.BringToFront();
+
             DeshabilitarTeclado();
         }
 
@@ -180,15 +236,70 @@ namespace Ahorcado
                 if (control is Button btn && btn.Text.Length == 1)
                 {
                     btn.Enabled = false;
+                    btn.BackColor = Color.PaleGoldenrod;
                 }
+            }
+        }
+
+        
+
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            base.OnFormClosed(e);
+            if (temporizador != null)
+            {
+                temporizador.Stop();
+                temporizador.Dispose();
             }
         }
 
         private void btnJugarDeNuevo_Click(object sender, EventArgs e)
         {
-            Form1 inicio = new Form1();
+            Form2 inicio = new Form2();
             inicio.Show();
-            this.Close();
+            this.Hide(); 
+
+            inicio.FormClosed += (s, args) => this.Close();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HacerBotonRedondeado(Button boton, int borderRadius = 25)
+        {
+            boton.FlatStyle = FlatStyle.Flat;
+            boton.FlatAppearance.BorderSize = 0;
+
+            boton.Paint += (s, e) =>
+            {
+                Button btn = s as Button;
+
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, borderRadius, borderRadius, 180, 90);
+                path.AddArc(btn.Width - borderRadius, 0, borderRadius, borderRadius, 270, 90);
+                path.AddArc(btn.Width - borderRadius, btn.Height - borderRadius, borderRadius, borderRadius, 0, 90);
+                path.AddArc(0, btn.Height - borderRadius, borderRadius, borderRadius, 90, 90);
+                path.CloseFigure();
+
+                btn.Region = new Region(path);
+
+                e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                e.Graphics.Clear(btn.BackColor);
+
+                using (Brush brush = new SolidBrush(btn.BackColor))
+                {
+                    e.Graphics.FillPath(brush, path);
+                }
+
+                TextRenderer.DrawText(e.Graphics, btn.Text, btn.Font,
+                    new Rectangle(0, 0, btn.Width, btn.Height),
+                    btn.ForeColor, btn.BackColor,
+                    TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
+
+                path.Dispose();
+            };
         }
     }
-}
+    }

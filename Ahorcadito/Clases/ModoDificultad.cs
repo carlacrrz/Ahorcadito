@@ -16,7 +16,7 @@ namespace Ahorcado
 
     public class ModoNormal : ModoDificultad
     {
-        public override int IntentosMaximos => 10;
+        public override int IntentosMaximos => 8;
         public override string Nombre => "Normal";
         public override bool EsConTiempo => false;
         public override int TiempoLimite => 0;
@@ -24,7 +24,7 @@ namespace Ahorcado
 
     public class ModoDificil : ModoDificultad
     {
-        public override int IntentosMaximos => 6;
+        public override int IntentosMaximos => 5;
         public override string Nombre => "Difícil";
         public override bool EsConTiempo => false;
         public override int TiempoLimite => 0;
@@ -32,7 +32,7 @@ namespace Ahorcado
 
     public class ModoContraReloj : ModoDificultad
     {
-        public override int IntentosMaximos => 10;
+        public override int IntentosMaximos => 8;
         public override string Nombre => "Contra Reloj";
         public override bool EsConTiempo => true;
         public override int TiempoLimite => 60;
@@ -40,7 +40,7 @@ namespace Ahorcado
 
     public class ModoExtremo : ModoDificultad
     {
-        public override int IntentosMaximos => 6;
+        public override int IntentosMaximos => 5;
         public override string Nombre => "Extremo";
         public override bool EsConTiempo => true;
         public override int TiempoLimite => 45;

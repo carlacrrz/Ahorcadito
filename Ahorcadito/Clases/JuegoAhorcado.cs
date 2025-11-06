@@ -6,9 +6,11 @@ namespace Ahorcado
 {
     public class JuegoAhorcado : JuegoBase
     {
+
         public JuegoAhorcado(string palabra, bool dificil)
         {
-            palabraSecreta = palabra.ToUpper();
+
+            palabraSecreta = palabra?.ToUpper() ?? "DEFAULT";
             letrasAdivinadas = new HashSet<char>();
             ConfigurarDificultad(dificil);
         }
@@ -30,7 +32,7 @@ namespace Ahorcado
 
         public override void ConfigurarDificultad(bool dificil)
         {
-            intentosMaximos = dificil ? 6 : 10;
+            intentosMaximos = dificil ? 5 : 8;
             intentosRestantes = intentosMaximos;
         }
 

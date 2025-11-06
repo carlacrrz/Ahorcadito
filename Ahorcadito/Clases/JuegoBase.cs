@@ -10,13 +10,36 @@ namespace Ahorcado
         protected HashSet<char> letrasAdivinadas;
         protected int intentosMaximos;
         protected int intentosRestantes;
+        private string[] caracteres;
 
+        public string PalabraSecreta
+        {
+            get { return palabraSecreta; }
+            protected set { palabraSecreta = value; }
+
+        }
         public string PalabraOculta
         {
             get
             {
-                return new string(palabraSecreta.Select(letra =>
-                    letrasAdivinadas.Contains(letra) ? letra : '_').ToArray());
+                if (string.IsNullOrEmpty(palabraSecreta))
+                    return "";
+
+                var caracteresOcultos = new List<char>();
+
+                for (int i = 0; i < palabraSecreta.Length; i++)
+                {
+                    char letra = palabraSecreta[i];
+                    if (letrasAdivinadas.Contains(letra))
+                        caracteresOcultos.Add(letra);
+                    else
+                        caracteresOcultos.Add('_');
+
+                    if (i < palabraSecreta.Length - 1)
+                        caracteresOcultos.Add(' ');
+                }
+
+                return new string(caracteresOcultos.ToArray());
             }
         }
 

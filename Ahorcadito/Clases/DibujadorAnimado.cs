@@ -4,7 +4,7 @@ namespace Ahorcado
 {
     public class DibujadorAnimado : DibujadorBase
     {
-        public DibujadorAnimado() : base(Color.DarkRed, 2) { }
+        public DibujadorAnimado() : base(Color.SaddleBrown, 2) { }
 
         public override Bitmap Dibujar(int errores, int ancho, int alto)
         {
@@ -16,13 +16,13 @@ namespace Ahorcado
 
                 for (int i = 1; i <= errores; i++)
                 {
-                    if (i <= 10)
+                    if (i <= 8)
                     {
                         DibujarParte(g, lapiz, i);
                     }
                 }
 
-                if (errores >= 10)
+                if (errores >= 8)
                 {
                     DibujarCaraTriste(g);
                 }
@@ -102,11 +102,11 @@ namespace Ahorcado
 
         private void DibujarCaraTriste(Graphics g)
         {
-            Pen lapizOjos = new Pen(Color.Black, 2);
+            Pen lapizOjos = new Pen(Color.Chocolate, 2);
             g.DrawArc(lapizOjos, 192, 95, 5, 5, 0, 360);
             g.DrawArc(lapizOjos, 203, 95, 5, 5, 0, 360);
 
-            Pen lapizBoca = new Pen(Color.Black, 2);
+            Pen lapizBoca = new Pen(Color.Chocolate, 2);
             g.DrawArc(lapizBoca, 192, 105, 16, 10, 0, 180);
         }
     }
